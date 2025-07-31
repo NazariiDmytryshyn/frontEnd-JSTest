@@ -37,10 +37,7 @@ export const Input = ({
   };
 
   const handleClear = () => {
-    const cleared = {
-      ...props,
-      target: { value: "" },
-    } as React.ChangeEvent<HTMLInputElement>;
+    const cleared = { ...props, target: { value: "" } } as React.ChangeEvent<HTMLInputElement>;
     handleChange(cleared);
   };
 
